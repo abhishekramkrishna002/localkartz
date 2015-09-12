@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<!--[if !IE]> <!-->
+<html lang="en-US">
+    <!--<![endif]-->
+    <head>
+
+        <title>Local Kartz | Save your local business</title>
+        <link type="text/css" href="css/product_upload.css" rel="stylesheet"/>
+    </head>
+    <body ng-app="myApp" ng-controller="mainCtrl" ng-init="product = {}">
+        <!--HEADER-->
+        <table class="pro-header" >
+            <tr class="white">
+                <td class="header-icon"><img src="icons/ic_store_white_24dp/web/ic_store_white_24dp_2x.png" class="header-icon"></td>
+                <td class="left french">Localkartz</td>
+                <td class="center half arial_rounded"><center>Product Repository</center></td>
+        <td class="right arial_rounded" >Howdy, Admin</td>
+    </tr>
+</table>
+<table class="main_container">
+    <tr class="main_container">
+        <td class="menu">
+            <!-- MENU -->
+            <table class="white">
+                <tr class="nav_item nav_item_active">
+                    <td class="center"><img src="icons/wearable/res/drawable-hdpi/ic_action.png" class="nav_icon"></td>
+                    <td class="arial_rounded">Wearables</td>
+                </tr>
+                <tr class="nav_item">
+                    <td class="center"><img src="icons/food/res/drawable-hdpi/ic_action.png" class="nav_icon"></td>
+                    <td class="arial_rounded">Food</td>
+                </tr>
+                <tr class="nav_item">
+                    <td class="center"><img src="icons/health/res/drawable-hdpi/ic_action.png" class="nav_icon"></td>
+                    <td class="arial_rounded">Health & Sport</td>
+                </tr>
+                <tr class="nav_item">
+                    <td class="center"><img src="icons/ic_radio_white_24dp/web/ic_radio_white_24dp_1x.png" class="nav_icon"></td>
+                    <td class="arial_rounded">Electronics</td>
+                </tr>
+                <tr class="nav_item">
+                    <td class="center"><img src="icons/home/res/drawable-hdpi/ic_action.png" class="nav_icon"></td>
+                    <td class="arial_rounded">Home needs</td>
+                </tr>
+            </table>
+        </td>
+        <td class="add_prod">
+            <table style="width:100%;margin:0;padding:0;">
+                <tr><td class="add_prod_heading"><span class="arial_rounded">Add New Product</span></td></tr>
+                <tr style="width: 100%">
+                    <td class="add_prod_section_1">
+                        <!-- title section -->
+                        <div class="add_prod_sub_section">
+                            <div class="add_prod_header">
+                                <span>Title</span>
+                            </div>
+                            <div class="add_prod_body">
+                                <input class="title_input_1" name='prod_title' placeholder="Enter Title Here" ng-model="product.title"/>
+                            </div>
+                            <div class="add_prod_footer">
+                                <span>*title of the product has to entered</span>
+                            </div>
+                        </div> 
+
+                        <!-- description section -->
+                        <div class="add_prod_sub_section">
+                            <div class="add_prod_header">
+                                <span>Description</span>
+                            </div>
+                            <div class="add_prod_body">
+                                <input class="title_input_2" name='prod_title' placeholder="Enter Description Here" ng-model="product.description"/>
+                            </div>
+                            <div class="add_prod_footer">
+                                <span>*description of the product has to entered</span>
+                            </div>
+                        </div> 
+                        <!-- company section -->
+                        <div class="add_prod_sub_section">
+                            <div class="add_prod_header">
+                                <span>Company</span>
+                            </div>
+                            <div class="add_prod_body">
+                                <input class="title_input_1" name='prod_title' placeholder="Enter Company Here" ng-model="product.company"/>
+                            </div>
+                            <div class="add_prod_footer">
+                                <span>*product's company has to entered</span>
+                            </div>
+                        </div> 
+                        <!-- category tree section -->
+                        <div class="add_prod_sub_section">
+                            <div class="add_prod_header">
+                                <span>Category Tree</span>
+                            </div>
+                            <div class="add_prod_body">
+                                <input class="title_input_1" name='prod_title' placeholder="Enter Category tree Here" ng-model="product.sub_category"/>
+                            </div>
+                            <div class="add_prod_footer">
+                                <span>*enter tree as cat_1>cat_2>cat_3 ,where '>' is the delimmiter for tree</span>
+                            </div>
+                        </div>
+                        <!-- property section -->
+                        <div class="add_prod_sub_section">
+                            <div class="add_prod_header">
+                                <span>Property</span>
+                            </div>
+                            <div class="add_prod_body" id="prop_container">
+                                <span class="arial_rounded">Add New Property</span>
+
+                                <div class="add_prod_body prod_property prop_style" onclick="prop_click(0)" >
+                                    <input type="text" placeholder="Name"  style="width:32%" name="param_name"/>
+                                    <select style="width:32%">
+                                        <option>Item</option>
+                                        <option>Array</option>
+                                    </select>
+                                    <input type="text" placeholder="value" style="width:32%" name="param_value"/>
+                                </div>
+
+                            </div>
+                            <div class="add_prod_footer">
+                                <span>*select the type of property ,if array,then delmit the values ','</span>
+                            </div>
+                        </div>
+                        <!-- image setion -->
+                        <div class="add_prod_sub_section">
+                            <div class="add_prod_header">
+                                <span>Image</span>
+                            </div>
+                            <div class="add_prod_body" id="image_container" >
+                                <span class="arial_rounded">Add New Image</span>
+
+                                <div class="add_prod_body prod_image prop_style" onclick="image_click(0)" >
+                                    <input type="text" placeholder="link"  style="width:49%"/>
+                                    <select style="width:49%">
+                                        <option>Main Image</option>
+                                        <option>angel</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="add_prod_footer">
+                                <span>*select the type of image and add the image link from the gallery</span>
+                            </div>
+                        </div>
+
+
+                    </td>
+                    <td class="add_prod_section_2">
+
+                        <!-- title section -->
+                        <div class="add_prod_sub_section">
+                            <div class="add_prod_header">
+                                <span>Publish</span>
+                            </div>
+                            <div class="add_prod_body">
+                                <div> 
+
+                                    <button class="button_1" ng-click="save()">save</button>
+                                    <button class="button_1">preview</button>
+
+
+                                </div>
+                                <div>
+                                    <p class="arial_rounded center">status:draft</p>
+                                </div>
+                            </div>
+                            <div class="add_prod_body">
+                                <div>       
+                                    <center>
+                                        <button class="button_2" id="publish" ng-click="publish()">publish</button>
+                                    </center>
+                                </div>
+                            </div>
+
+                        </div> 
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="js/product_upload.js">
+</script>
+</body>
+
+</html>

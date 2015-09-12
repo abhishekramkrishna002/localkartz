@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+
+<!--[if !IE]> <!-->
+<html lang="en-US">
+    <!--<![endif]-->
+    <head>
+
+        <title>Local Kartz | Save your local business</title>
+       
+        
+        <style>
+            table {
+                width: 100%;
+                margin: 0;
+                border-collapse: collapse;
+            }
+            td
+            {
+                padding:0px; 
+                margin:0px;
+            }
+            @font-face {
+                font-family: french;
+                src: url(font/french.ttf);
+            }
+            @font-face {
+                font-family: arial_rounded;
+                src: url(font/arial_rounded.ttf);
+            }
+            @font-face {
+                font-family: open_sans_light;
+                src: url(font/open_sans_light.ttf);
+            }
+            body{
+                margin: 0 auto;
+                width: 100%;
+                background-color: white;
+            }
+            .open_sans_light
+            {
+                font-family: 'open_sans_light';
+            }
+
+            /*Product repository */
+            .pro-header {
+                background-color: #242b37;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .french
+            {
+                font-family:"french";
+                font-size: 2em;
+            }
+            .arial_rounded
+            {
+                font-family:"arial_rounded";	
+            }
+
+            .header-icon {
+                width: 30px;
+                height: 30px;
+            }
+            .nav_icon
+            {
+                width: 24px;
+                height: 24px;
+            }
+            .white{
+                color: white;
+            }
+
+            .half {
+                width: 50%;
+            }
+
+            .right {
+                text-align: right;
+            }
+
+
+            .pro-content {
+                background-color: white;
+                color: black;
+            }
+            .prod_row
+            {
+                outline: #d3d3d3 solid 1px ;
+
+            }
+            .prod_row>td{
+                padding: 5px;
+            }
+
+
+            .demo-pic {
+                width: 50px;
+                height: 50px;
+            }
+            .pro-button {
+
+                background-color: #d3d3d3;
+                width: 90%;
+                text-align: center;
+                font-size: 0.9em;
+                padding: 0.1em;
+                font-weight: bold;
+
+                font-family: 'open_sans_light';
+            }
+            .pro-search {
+                padding-bottom: 5px;
+                width: 95%;
+            }
+            .border-right {
+                border-right: 1pt solid black;
+            }
+
+            .pro-pagination {
+                margin-bottom: 5px;
+                text-align: center;
+            }
+            .pro-pagination h4 {
+                font-family: 'arial_rounded';
+                color: black;
+                display: inline;
+                vertical-align: middle;
+            }
+
+            .vertically-center {
+                vertical-align: middle;
+            }
+
+            .left {
+                text-align: left;
+            }
+            .left-margin {
+                margin-left: 20px;
+            }
+
+            .pro-upload {
+                width: 100%;
+                height: auto;
+                margin: 20px;
+            }
+            .gray {
+                background-color: #E5E5E5;
+            }
+            .pro-title {
+                background-color: #242b37;
+                width: 100%;
+                height: 30px;
+                color: white;
+                padding-top: 3px;
+                vertical-align: middle;
+            }
+
+            .pro-title h3 {
+                margin-left: 20px;
+                color: white;
+            }
+            .pro-input {
+                width: 100%;
+                height: 40px;
+            }
+            .pro-box {
+                background-color: white;
+                padding: 3px;
+            }
+
+            .pro-input:focus {
+                width: 100%;
+                height: 40px;
+            }
+            .pro-help {
+                padding: 3px;
+                color: #B5A38F;
+            }
+
+            .pro-textarea {
+                width: 100%;
+            }
+
+            .pad {
+                padding: 3px;
+            }
+            .border-solid {
+                border: 1px solid #e5e5e5;
+            }
+
+            .center
+            {
+                text-align:center;
+            }
+            .nav_item > td
+            {
+                padding-bottom:0.4em;
+                padding-top: 0.4em;
+            }
+            .nav_item_active
+            {
+                background-color: #555555;  
+            }
+
+            .main_container
+            {
+                width:100%;
+            }
+            .menu {
+                width: 15%;
+                background-color: #242b37;
+                vertical-align: top;
+            }
+            .prod_list
+            {
+                background-color: white;
+                color:black;
+                vertical-align: top;
+            }
+            .prod_icon
+            {
+                width:60px;
+                height:50px;
+            }
+            input {
+                width: 80%;
+                border: none;
+                font-size: 1em;
+                color: gray;
+                border: 1px solid #d3d3d3;
+
+            }
+
+            input:focus {
+                width: 100%;
+                border: none;
+                font-size: 1em;
+                color: gray;
+            }
+            ::-webkit-input-placeholder {
+                color: gray;
+                font-family:'open_sans_light';
+                text-align:center;
+            }
+
+            :-moz-placeholder {/* Firefox 18- */
+                color: gray;
+                font-family:'open_sans_light';
+                    text-align:center;
+            }
+
+            ::-moz-placeholder {/* Firefox 19+ */
+                color: gray;
+                font-family: 'open_sans_light';
+                text-align:center;
+            }
+
+            :-ms-input-placeholder {
+                color: gray;
+                font-family: 'open_sans_light';
+                text-align:center;
+            }
+            .pro_select
+            {
+                width:95%;
+                background-color: #d3d3d3;
+                font-family: 'arial_rounded';
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <!--HEADER-->
+        <table class="pro-header">
+            <tr class="white">
+                <td class="header-icon"><img src="icons/ic_store_white_24dp/web/ic_store_white_24dp_2x.png" class="header-icon"></td>
+                <td class="left french">Localkartz</td>
+                <td class="center half arial_rounded"><center>Product Repository</center></td>
+        <td class="right arial_rounded" >Howdy, Admin</td>
+    </tr>
+</table>
+<table class="main_container">
+    <tr class="main_container">
+        <td class="menu">
+            <!-- MENU -->
+            <table class="white">
+                <tr class="nav_item nav_item_active">
+                    <td class="center"><img src="icons/wearable/res/drawable-hdpi/ic_action.png" class="nav_icon"></td>
+                    <td class="arial_rounded">Wearables</td>
+                </tr>
+                <tr class="nav_item">
+                    <td class="center"><img src="icons/food/res/drawable-hdpi/ic_action.png" class="nav_icon"></td>
+                    <td class="arial_rounded">Food</td>
+                </tr>
+                <tr class="nav_item">
+                    <td class="center"><img src="icons/health/res/drawable-hdpi/ic_action.png" class="nav_icon"></td>
+                    <td class="arial_rounded">Health & Sport</td>
+                </tr>
+                <tr class="nav_item">
+                    <td class="center"><img src="icons/ic_radio_white_24dp/web/ic_radio_white_24dp_1x.png" class="nav_icon"></td>
+                    <td class="arial_rounded">Electronics</td>
+                </tr>
+                <tr class="nav_item">
+                    <td class="center"><img src="icons/home/res/drawable-hdpi/ic_action.png" class="nav_icon"></td>
+                    <td class="arial_rounded">Home needs</td>
+                </tr>
+            </table>
+        </td>
+        <td class="prod_list">
+            <table style="width:100%;padding:0;margin:0;" >
+                <tr>
+                    <td>
+                        <span class="arial_rounded" style="font-size: 1.5em;">+</span><span class="arial_rounded" style="font-size: 1.1em;">Add Product</span>
+                    </td>
+                </tr>
+                <tr class="center arial_rounded">
+                    <td>
+                        <select class="pro_select"><option> Bulk action</option>
+                        </select></td>
+                    <td>
+                        <button class="pro-button">
+                            Apply
+                        </button></td>
+                    <td>
+                        <input type="text" class="pro-search" placeholder="search product"/></td>
+                    <td><h4 class="border-right">All (13) </h4></td>
+                    <td><h4 class="border-right"> Published (13) </h4></td>
+                    <td><h4> Drafted (13) </h4></td>
+                </tr>
+            </table>
+            <!-- LIST -->
+            <div class="pro-content">
+                <table style="width:100%;padding:0;margin:0;">
+                    <!-- header -->
+                    <tr class="center prod_row arial_rounded">
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td><span>Title</span>  </td>
+                        <td><span> Image </span></td>
+                        <td><span> Description </span></td>
+                        <td><span> Company </span></td>
+                        <td><span> Category tree </span></td>
+                        <td><span>Data upload </span></td>
+                    </tr>
+                    <!--list items-->
+                    <tr class="center prod_row open_sans_light">
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td><span>Title</span>  </td>
+                        <td><span><img src="images/demo.jpg" class="prod_icon"/></td>
+                        <td><span> Description </span></td>
+                        <td><span> Company </span></td>
+                        <td><span> Category tree </span></td>
+                        <td><span>Data upload </span></td>
+                    </tr>
+                    <tr class="center prod_row open_sans_light">
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td><span>Title</span>  </td>
+                        <td><span><img src="images/demo.jpg" class="prod_icon"/></td>
+                        <td><span> Description </span></td>
+                        <td><span> Company </span></td>
+                        <td><span> Category tree </span></td>
+                        <td><span>Data upload </span></td>
+                    </tr>
+                    <tr class="center prod_row open_sans_light">
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td><span>Title</span>  </td>
+                        <td><span><img src="images/demo.jpg" class="prod_icon"/></td>
+                        <td><span> Description </span></td>
+                        <td><span> Company </span></td>
+                        <td><span> Category tree </span></td>
+                        <td><span>Data upload </span></td>
+                    </tr>
+                    <tr class="center prod_row open_sans_light">
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td><span>Title</span>  </td>
+                        <td><span><img src="images/demo.jpg" class="prod_icon"/></td>
+                        <td><span> Description </span></td>
+                        <td><span> Company </span></td>
+                        <td><span> Category tree </span></td>
+                        <td><span>Data upload </span></td>
+                    </tr>
+                    <tr class="center prod_row open_sans_light">
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td><span>Title</span>  </td>
+                        <td><span><img src="images/demo.jpg" class="prod_icon"/></td>
+                        <td><span> Description </span></td>
+                        <td><span> Company </span></td>
+                        <td><span> Category tree </span></td>
+                        <td><span>Data upload </span></td>
+                    </tr>
+                    <tr class="center prod_row open_sans_light">
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td><span>Title</span>  </td>
+                        <td><span><img src="images/demo.jpg" class="prod_icon"/></td>
+                        <td><span> Description </span></td>
+                        <td><span> Company </span></td>
+                        <td><span> Category tree </span></td>
+                        <td><span>Data upload </span></td>
+                    </tr>
+                    <tr class="center prod_row open_sans_light">
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td><span>Title</span>  </td>
+                        <td><span><img src="images/demo.jpg" class="prod_icon"/></td>
+                        <td><span> Description </span></td>
+                        <td><span> Company </span></td>
+                        <td><span> Category tree </span></td>
+                        <td><span>Data upload </span></td>
+                    </tr>
+                    <tr class="center prod_row open_sans_light">
+                        <td>
+                            <input type="checkbox" >
+                        </td>
+                        <td><span>Title</span>  </td>
+                        <td><span><img src="images/demo.jpg" class="prod_icon"/></td>
+                        <td><span> Description </span></td>
+                        <td><span> Company </span></td>
+                        <td><span> Category tree </span></td>
+                        <td><span>Data upload </span></td>
+                    </tr>
+
+                    <tr class="center prod_row">
+                        <td colspan="7">
+                            <div class="center pro-pagination" style="text-align: center">
+                                <img src="images/left_arrow.png" alt="left icon" class="nav_icon vertically-center "  />
+                                <h4 style="border-right:1px solid black;">prev </h4>
+                                <h4 style="margin-left:3px;">next </h4>
+                                <img src="images/right_arrow.png" alt="right icon" class="nav_icon vertically-center" />
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+         
+</body>
+
+</html>

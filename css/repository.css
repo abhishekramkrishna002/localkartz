@@ -1,0 +1,412 @@
+/* Author: Ahmed Viquas
+ * Company:  Droiet
+ * url : www.localkartz.com
+ */
+
+body {
+	font-family: sans-serif;
+	margin: auto 0;
+	padding: 0px;
+	overflow-y: scroll;
+overflow-x: hidden;
+}
+
+header {
+	margin: 0;
+	margin-bottom: 10px;
+	background-color: white;
+	border-color: #e7e7e7;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	
+}
+a{
+	color:white;
+	text-decoration:none;
+}
+.top-header {
+	background-color: white;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 0.8em;
+	
+}
+.bottom-header {
+	background-color: #242b37;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	width: 100%;
+	margin: 0;
+}
+td, tr {
+	padding: 0px;
+	margin: 0px;
+	word-wrap: break-word;
+}
+th{
+	text-align:left;
+}
+/*
+ Custom header
+ */
+
+.message {
+	text-align: center;
+}
+.categories {
+	color: white;
+	font-family: 'Montserrat Alternates normal';
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.col-6 {
+	width: 16.66%;
+}
+
+.gap {
+	width: 10%;
+}
+
+input {
+	width: 80%;
+	border: none;
+	font-size: 1.3em;
+	color: #666;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	line-height: 27px;
+	border-left: 2px solid #eeeeee;
+	border-right: 2px solid #eeeeee;
+}
+
+input:focus {
+	outline: 0;
+	width: 80%;
+	font-size: 1.3em;
+	color: #666;
+	border-radius: 0 !important;
+	box-shadow: none !important;
+	line-height: 27px;
+	border-left: 1px solid #eeeeee;
+	border-right: 2px solid #eeeeee;
+	border-bottom: 2px solid #eeeeee;
+}
+
+::-webkit-input-placeholder {
+	color: gray;
+	font-family: 'Lato', sans-serif;
+	text-align:center;
+}
+
+:-moz-placeholder {/* Firefox 18- */
+	color: gray;
+	font-family: 'Lato', sans-serif;
+}
+
+::-moz-placeholder {/* Firefox 19+ */
+	color: gray;
+	font-family: 'Lato', sans-serif;
+}
+
+:-ms-input-placeholder {
+	color: gray;
+	font-family: 'Lato', sans-serif;
+}
+
+.search {
+	background: url(https://assets.akkroo.com/marketing/img/icons/search-icon.png);
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	border: 0;
+	display: inline-block;
+}
+
+
+/* Footer  */
+footer{
+	height:200px;
+	width:100%;
+	background-color:#242b37;
+		margin:0;
+}
+.footer-icon{
+	width:20px;
+	height:20px;
+	margin-right:10px;
+	 
+    left: 0;
+    bottom: 0;
+}
+.footer_table{
+	color:white;
+	padding:2em;
+	font-size:0.9em;
+	font-family: 'Lato', sans-serif;
+}
+table.footer_table  td{
+	color:#B5A38F;
+}
+
+
+.logo{
+	font-weight:bold;
+	font-size:2em;
+	
+}
+/* Shop container */
+.shop_wide_image {
+ width:100%;
+ height:400px;
+ overflow:hidden;
+
+-webkit-filter: sepia(0.0);
+  filter: sepia(0.0);
+  position:relative;
+  background-size:cover;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+
+.layer{
+	background-image:url('../images/pattern-dots-single.png');
+	margin:0;
+	    background-repeat: repeat;
+   height:100%;
+   z-index: 10;
+   position:relative;
+   padding:25px;
+}
+.shop-container{
+	height:150px;
+	width:500px;
+	background: rgba(254, 254, 254, .8);*/
+	padding:10px;
+	background-size:cover;
+	border-radius:10px;
+	
+	 box-shadow: 0px 5px 5px #2a2a2a;
+}
+
+.shop-image{
+	width:150px;
+	height:150px;
+	background-image:url('../images/pattern-dots-single.png');
+	float:left;
+	    background-repeat: repeat;
+   
+   z-index: 1;
+}
+
+.shop-image img{
+	width:150px;
+	height:150px;
+	
+		
+}
+
+.shop-info{
+	
+ margin-left:150px;	
+ padding:10px;
+ }
+
+.shop-info h1, h3, h4{
+	color:black;
+	
+	margin:0;
+	font-family: 'Open Sans Condensed', sans-serif;
+	
+}
+.shop-info h1
+{
+	font-weight:bold;
+}
+
+.shop-icon{
+	width:20px;
+	height:20px;
+	vertical-align:middle;	
+}
+
+.product-container{
+	background-color:white;
+	width:100%;
+	padding:20px;
+	height:auto;
+	
+}
+
+
+.product-filter-div{
+	width:20%;
+	
+	height:auto;
+	float:left;
+	margin:10px;
+}
+
+.product-filter{
+	padding:10px;
+background-color:#FAF9F7;
+}
+
+.product-list{
+	width:70%;
+	
+	height:auto;
+	display:inline-block;	
+	margin:10px auto;
+	text-align:center;	
+}
+.product-card{
+	display:inline-block;
+	width: 230px;
+	margin: 1em;
+	padding:0;
+	border: 1px solid #d3d3d3;	
+	
+	background-color:white;
+	
+}
+
+.filter-title{
+	color:#383838;
+	line-height: 1.2;
+	font-family: 'Montserrat Alternates normal';
+	font-weight:bold;
+}
+
+.filter-sub-title{
+	color:#C98702;
+}
+
+.filter-names li{
+	margin:5px auto;
+	 list-style-type: none;
+}
+.filter-names li:hover{
+	margin:5px auto;
+	 list-style-type: none;
+	 color:#C98702;
+	 
+}
+.vertical-line {
+  background:#717171;
+margin:10px auto;
+border-bottom:1px solid #EBEBE8;
+}
+
+.product-card td {
+	margin:0;
+	padding:10px auto;
+	
+}
+.product-card tr{
+	margin:0;
+	padding:10px;
+	height:50px;
+	
+}
+.product-image {
+	width:100%;
+	display:block;
+	 position:relative;
+	margin:0 auto;
+	
+}
+
+.product-image-div{
+	max-width: 350px;
+	position:relative;
+}
+
+.product-name {
+	width: 100%;
+	text-align: left;
+	padding-left:15px;
+	padding-top:8px;
+	font-family: 'Lato', sans-serif;
+	margin:10px;
+	font-size:1.1em;
+	word-break: keep-all;
+}
+
+
+.product-cost {
+	width:350px;
+	word-wrap: break-word;
+	text-align: left;
+	padding-left:15px;
+	padding-bottom:10px;
+	font-family: 'Lato', sans-serif;
+	font-size:0.9em;
+	color:#898989;
+	color:#e18136;
+	font-style: italic;
+	
+}
+.product-checkbox{
+	padding:0;
+	margin:0;
+	width:30px;
+	
+}
+
+.new{
+ 	float: right;
+    position: absolute;
+    right: 10px;
+    top:10px;
+    background-color:#e18136;
+    color:white;
+    width:50px;
+    height:50px;
+    border-radius:25px;
+   
+}
+.new h4{
+	text-align:center;
+	margin-top:auto;
+	margin-bottom:auto;
+	color:white;
+	 font-family: 'Questrial', sans-serif;
+	 font-weight:lighter;
+	line-height: 48px;
+	
+}
+.product-offer{
+	margin-left:5px;
+	color:#2a2a2a;
+}
+
+.center{
+	text-align:center;
+}
+/* word break */
+p{
+word-wrap: break-word;}
+
+/* copyright*/
+
+.copyright{
+	background-color:#B5A38F;
+	width:100%;
+	height:50px;
+	margin:0;
+	color:white;
+	padding:0.2em;
+	text-align:center;
+	font-family: 'Lato', sans-serif;
+	font-size:0.8em;
+}

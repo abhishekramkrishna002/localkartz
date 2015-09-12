@@ -1,0 +1,343 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 12 Sep, 2015, 2:31:00 PM
+    Author     : abhishek
+*/
+table {
+    width: 100%;
+    margin: 0;
+    border-collapse: collapse;
+}
+td
+{
+    padding:0px; 
+    margin:0px;
+}
+@font-face {
+    font-family: french;
+    src: url(../font/french.ttf);
+}
+@font-face {
+    font-family: arial_rounded;
+    src: url(../font/arial_rounded.ttf);
+}
+@font-face {
+    font-family: open_sans_light;
+    src: url(../font/open_sans_light.ttf);
+}
+body{
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}
+.open_sans_light
+{
+    font-family: 'open_sans_light';
+}
+
+/*Product repository */
+.pro-header {
+    background-color: #242b37;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.french
+{
+    font-family:"french";
+    font-size: 2em;
+}
+.arial_rounded
+{
+    font-family:"arial_rounded";	
+}
+
+.header-icon {
+    width: 30px;
+    height: 30px;
+}
+.nav_icon
+{
+    width: 24px;
+    height: 24px;
+}
+.white{
+    color: white;
+}
+
+.half {
+    width: 50%;
+}
+
+.right {
+    text-align: right;
+}
+
+
+.pro-content {
+    background-color: white;
+    color: black;
+}
+.prod_row
+{
+    outline: #d3d3d3 solid 1px ;
+
+}
+.prod_row>td{
+    padding: 5px;
+}
+
+
+.demo-pic {
+    width: 50px;
+    height: 50px;
+}
+.pro-button {
+
+    background-color: #d3d3d3;
+    width: 90%;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.1em;
+    font-weight: bold;
+
+    font-family: 'open_sans_light';
+}
+.pro-search {
+    padding-bottom: 5px;
+    width: 95%;
+}
+.border-right {
+    border-right: 1pt solid black;
+}
+
+.pro-pagination {
+    margin-bottom: 5px;
+    text-align: center;
+}
+.pro-pagination h4 {
+    font-family: 'arial_rounded';
+    color: black;
+    display: inline;
+    vertical-align: middle;
+}
+
+.vertically-center {
+    vertical-align: middle;
+}
+
+.left {
+    text-align: left;
+}
+.left-margin {
+    margin-left: 20px;
+}
+
+.pro-upload {
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+.gray {
+    background-color: #E5E5E5;
+}
+.pro-title {
+    background-color: #242b37;
+    width: 100%;
+    height: 30px;
+    color: white;
+    padding-top: 3px;
+    vertical-align: middle;
+}
+
+.pro-title h3 {
+    margin-left: 20px;
+    color: white;
+}
+.pro-input {
+    width: 100%;
+    height: 40px;
+}
+.pro-box {
+    background-color: white;
+    padding: 3px;
+}
+
+.pro-input:focus {
+    width: 100%;
+    height: 40px;
+}
+.pro-help {
+    padding: 3px;
+    color: #B5A38F;
+}
+
+.pro-textarea {
+    width: 100%;
+}
+
+.pad {
+    padding: 3px;
+}
+.border-solid {
+    border: 1px solid #e5e5e5;
+}
+
+.center
+{
+    text-align:center;
+}
+.nav_item > td
+{
+    padding-bottom:0.4em;
+    padding-top: 0.4em;
+}
+.nav_item_active
+{
+    background-color: #555555;  
+}
+
+.main_container
+{
+    width:100%;
+}
+.menu {
+    width: 15%;
+    background-color: #242b37;
+    vertical-align: top;
+}
+.add_prod
+{
+    background-color: white;
+    color:black;
+    vertical-align: top;
+}
+.prod_icon
+{
+    width:60px;
+    height:50px;
+}
+
+::-webkit-input-placeholder {
+    color: #d3d3d3;
+    font-family: 'arial_rounded', sans-serif;
+    text-align:center;
+}
+
+:-moz-placeholder {/* Firefox 18- */
+    color: #d3d3d3;
+    font-family: 'arial_rounded', sans-serif;
+}
+
+::-moz-placeholder {/* Firefox 19+ */
+    color: #d3d3d3;
+    font-family: 'arial_rounded', sans-serif;
+}
+
+:-ms-input-placeholder {
+    color: #d3d3d3;
+    font-family: 'arial_rounded', sans-serif;
+}
+.pro_select
+{
+    width:95%;
+    background-color: #d3d3d3;
+    font-family: 'arial_rounded';
+}
+.add_prod_heading
+{
+    vertical-align:center;
+    color: black;
+    padding: 0.6em;
+}
+.add_prod_section_1
+{
+    width: 65%; 
+    vertical-align: top;
+}
+.add_prod_section_2
+{
+    vertical-align: top;
+    width: 35%;  
+}
+.add_prod_sub_section{
+    margin: 5%;
+}
+.add_prod_header
+{
+    color: white;
+    background-color: #242b37;
+    border: #c0c0c0 solid 0.5px;
+    font-family: 'arial_rounded';
+    padding:0.3em;
+}
+.add_prod_body
+{
+
+    border: #c0c0c0 solid 1px;
+    font-family: 'arial_rounded';
+}
+.add_prod_footer
+{
+    border:red solid 1px; 
+    border: #c0c0c0 solid 0.5px;
+    /*                font-weight: bold;*/
+    font-family: 'arial_rounded';
+    font-size: 0.9em;
+}
+.title_input_1
+{
+    width:99.5%;
+    font-family: 'arial_rounded';
+    text-align: center;
+    padding: 0;
+    margin:0;
+    vertical-align: central;
+    height: 50px;
+}
+.title_input_2
+{
+    width:99.5%;
+    font-family: 'arial_rounded';
+    text-align: center;
+    padding: 0;
+    margin:0;
+    vertical-align: center;
+    height: 200px;
+}
+.button_1 {
+
+    background-color: #d3d3d3;
+    width: 46%;
+    margin-top: 2.5%;
+    margin-left: 1%;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.1em;
+    font-weight: bold;
+    color:#242b37;
+    font-family: 'arial_rounded';
+}
+.button_2 {
+
+    margin: 2.5% auto;
+    background-color: #242b37;
+    color: white;
+    width: 80%;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 0.1em;
+    font-weight: bold;
+
+    font-family: 'arial_rounded';
+}
+.prop_style
+{
+    margin:2%;
+    text-align: center;
+}
+
